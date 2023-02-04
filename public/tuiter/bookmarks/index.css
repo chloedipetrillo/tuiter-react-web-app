@@ -139,7 +139,6 @@ wd-icon-row {
     color: red;
 }
 
-
 .wd-big-three-dots{
     float: right;
     color: rgb(29, 161, 242);
@@ -147,7 +146,3 @@ wd-icon-row {
     font-size: 18px;
     padding-top: 12px;
 }
-
-/* try invidible box with just no border and no padding
-then within the html you can set dimensions
- */
