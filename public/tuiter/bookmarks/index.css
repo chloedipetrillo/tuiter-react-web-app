@@ -1,0 +1,153 @@
+body {
+    background-color: black;
+    font-family: "Helvetica Neue";
+    color: white;
+
+}
+
+
+.wd-min-page-size{
+    min-width: 700px;
+}
+
+.wd-border{
+    border-width: 1px;
+    border-color: rgb(47,51,54);
+    border-style: solid;
+
+
+}
+
+.wd-left-align{
+    padding-left: 16px;
+}
+
+.wd-further-left{
+    padding-left: 12px;
+}
+.wd-padding-top-and-bottom{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.wd-heading {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.wd-my-handle {
+    font-size: 13px;
+    color: rgb(107, 110, 112);
+}
+
+.wd-profile-icon{
+    border-radius:50px;
+    height: 48px;
+    width: 48px;
+}
+
+.wd-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-right-align {
+    float: right;
+    color: rgb(47, 51, 54);
+    margin-right: 12px;
+}
+
+.wd-author {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-handle{
+    font-size: 15px;
+    color: rgb(107, 110, 112);
+}
+
+.wd-main-text {
+    font-size: 15px;
+    font-weight: normal;
+
+
+}
+
+.wd-main-content-pic{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height:264px;
+    width: 504px;
+
+    border-style: solid;
+    border-color: rgb(47,51,54);
+    border-width: 1px;
+}
+
+
+.wd-pic-alignment {
+    padding-left: 59px;
+    width: 504px;
+    padding-top: 12px;
+    line-height: 0px;
+}
+
+
+
+.wd-pic-caption-border {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 12px;
+    width: 480px;
+    border-style: solid;
+    border-color: rgb(47,51,54);
+    border-width: 1px;
+    line-height: 110%;
+}
+
+.wd-invisible-border {
+    border-style: none;
+    border-width: 0;
+
+}
+
+wd-icon-row {
+    color: rgb(107, 110, 112);
+    display: flex;
+    align-items: stretch;
+    /*padding-top-right: 20px;*/
+    justify-content: space-evenly;
+    font-weight: bold;
+
+}
+
+.wd-heart {
+    line-height: 100%;
+    color: red;
+}
+
+
+.wd-bottom-icons {
+    height: 16px;
+    padding-left: 5px;
+
+}
+
+.wd-icon-row .wd-clicked{
+    color: red;
+}
+
+
+.wd-big-three-dots{
+    float: right;
+    color: rgb(29, 161, 242);
+    padding-right: 12px;
+    font-size: 18px;
+    padding-top: 12px;
+}
+
+/* try invidible box with just no border and no padding
+then within the html you can set dimensions
+ */
