@@ -1,0 +1,57 @@
+body {
+    padding: 10px;
+    font-family: "Helvetica Neue";
+    margin-left:8px;
+
+}
+
+.wd-position-search-icon {
+    bottom: 7px;
+    left: 12px;
+    position: absolute;
+}
+
+.wd-button-color {
+    color: #0d6efd;
+}
+
+.wd-img {
+    height:48px;
+    width:48px;
+    object-fit: cover;
+
+}
+
+.wd-tuit-images {
+    height:100px;
+    width:100px;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+
+.wd-follow-button {
+    height:35px;
+    width:80px;
+    font-size:10px;
+}
+
+.wd-text-over-pic {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.wd-padding-right{
+    padding-right: 10px
+}
+
+.wd-font-size {
+    font-size: 14px;
+}
+.wd-stack-size{
+    font-size:8px;
+}
