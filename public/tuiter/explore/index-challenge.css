@@ -168,7 +168,9 @@ body {
 
 }
 
-
+.wd-font-tiny{
+    font-size:12px;
+}
 
 .float-left {
     float: left;
