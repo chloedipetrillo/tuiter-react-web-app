@@ -122,6 +122,10 @@ body {
 
 }
 
+.nav.override-nav{
+    justify-content:space-between;
+}
+
 .wd-arrow {
     rotate:-45deg;
 }
@@ -140,3 +144,42 @@ body {
     position: absolute;
     right: 8px;
 }
+
+.wd-tiny-padding{
+    padding-bottom: 2px;
+}
+
+.wd-box{
+    width: 70%;
+    height: 4px;
+    border-style:solid;
+    border-radius:20px;
+    border-color:rgb(29, 161, 242);
+    background-color: rgb(29, 161, 242);
+    margin-left:14px;
+}
+
+.wd-notif {
+    font-size: 6px;
+    color: rgb(29, 161, 242);
+    position: absolute;
+    left:18px;
+    top: 0px;
+
+}
+
+
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+    height: 100px;
+}
+
+.float-done {
+    clear: both;
+}
+
