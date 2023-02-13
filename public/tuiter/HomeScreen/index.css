@@ -1,0 +1,40 @@
+.card.override-c {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    border-radius: 20px;
+}
+
+.card-body.override-cb {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 8px;
+    background-color: black;
+}
+
+.card-img-top.override-ct {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(47, 51, 54);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.list-group-item.override-bgcolor{
+    background-color: black;
+}
+
+.col-3.override-col-padding{
+    padding-left: 2px;
+    padding-right:1px;
+}
+
+.wd-img {
+    max-width: 504px;
+    max-height:254px;
+    object-fit: cover;
+}
