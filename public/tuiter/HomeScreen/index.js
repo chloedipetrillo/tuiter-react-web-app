@@ -4,7 +4,7 @@ import PostList from "../PostList/PostList.js";
 
 
 
-function explore() {
+function HomeScreenComponent() {
     $('#wd-homescreen').append(`
    <div class="row mt-2">
         <div class="col-2 col-lg-1 col-xl-2">
@@ -19,5 +19,5 @@ function explore() {
    </div>
    `);
 }
-$(explore);
+$(HomeScreenComponent);
 
