@@ -149,13 +149,13 @@ body {
 }
 
 .wd-box{
-    width: 70%;
+    width: 100%;
     height: 4px;
     border-style:solid;
     border-radius:20px;
     border-color:rgb(29, 161, 242);
     background-color: rgb(29, 161, 242);
-    margin-left:14px;
+
 }
 
 .wd-notif {

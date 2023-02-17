@@ -32,7 +32,7 @@ const PostItems = (post) => {
            
             <div class="row mt-2 ps-4 pt-1 pb-1">
               <div class="col-3 override-col-padding">
-                <i class="fas fa-comment wd-tuiter-gray"></i>
+                <i class="far fa-comment wd-tuiter-gray"></i>
                 <span class="wd-tuiter-gray wd-font-tiny">${post.numComments}</span>
               </div>
               <div class="col-3 override-col-padding">
@@ -40,7 +40,7 @@ const PostItems = (post) => {
                 <span class="wd-tuiter-gray wd-font-tiny">${post.numRetuits}</span>
               </div>
               <div class="col-3 override-col-padding">
-                <i class="fa fa-heart wd-tuiter-gray"></i>
+                <i class="far fa-heart wd-tuiter-gray"></i>
                 <span class="wd-tuiter-gray wd-font-tiny">${post.numLikes}</span>
               </div>
               <div class="col-3 override-col-padding">

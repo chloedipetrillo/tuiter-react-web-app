@@ -22,6 +22,7 @@ let booleanVariable = true;
 let isNumber = typeof numberVariable;
 let isString = typeof stringVariable;
 let isBoolean = typeof booleanVariable;
+console.log(numberVariable);
 console.log(floatingPointNumber);
 console.log(stringVariable);
 console.log(booleanVariable);

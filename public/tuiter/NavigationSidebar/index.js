@@ -1,4 +1,4 @@
-const NavigationSidebar = (page) =>{
+const NavigationSidebar = (active) =>{
     return(`<div class="list-group border-0">
                 <div class="list-group-item border-0">
                     <a href="#">
@@ -10,7 +10,7 @@ const NavigationSidebar = (page) =>{
                     </a>
                 </div>
                 <a href="../HomeScreen/index.html" class="list-group-item list-group-item-action border-0 
-                    ${page==='Home'? 'active' : ''}">
+                    ${active === 'Home' ? 'active' : ''}">
                     <div class="row">
                         <div class="col-2">
                             <div class="position-relative">
@@ -19,78 +19,78 @@ const NavigationSidebar = (page) =>{
                             </div>
 
                         </div>
-                        <div class="col-10 d-none d-xl-inline ps-3 ${page==='Home'? 'fw-bold' : 'fw-light'}">
+                        <div class="col-10 d-none d-xl-inline ps-3 ${active === 'Home' ? 'fw-bold' : 'fw-light'}">
                             Home
                         </div>
                     </div>
                 </a>
-                <a href="../explore/index-a5.html" class="list-group-item border-0 list-group-item-action ${page==='Explore'? 'active' : ''}">
+                <a href="../explore/index.html" class="list-group-item border-0 list-group-item-action ${active === 'Explore' ? 'active' : ''}">
                     <div class="row">
                         <div class="col-2">
                             <i class="fas fa-hashtag"></i>
                         </div>
-                        <div class="col-10 d-none d-xl-inline ps-3 ${page==='Explore'? 'fw-bold' : 'fw-light'}">
+                        <div class="col-10 d-none d-xl-inline ps-3 ${active === 'Explore' ? 'fw-bold' : 'fw-light'}">
                             Explore
                         </div>
                     </div>
                 </a>
                 <a href="#" class="list-group-item border-0 list-group-item-action 
-                    ${page==='Notifications'? 'active' : ''}">
+                    ${active === 'Notifications' ? 'active' : ''}">
                     <div class="row">
                         <div class="col-2">
                             <i class="fas fa-bell"></i>
                         </div>
-                        <div class="col-10 d-none d-xl-inline ps-3 ${page==='Notifications'? 'fw-bold' : 'fw-light'}">
+                        <div class="col-10 d-none d-xl-inline ps-3 ${active === 'Notifications' ? 'fw-bold' : 'fw-light'}">
                             Notifications
                         </div>
                     </div>
                 </a>
                 <a href="#" class="list-group-item border-0 list-group-item-action 
-                    ${page==='Messages'? 'active' : ''}">
+                    ${active === 'Messages' ? 'active' : ''}">
                     <div class="row">
                         <div class="col-2">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="col-10 d-none d-xl-inline ps-3 ${page==='Messages'? 'fw-bold' : 'fw-light'}">
+                        <div class="col-10 d-none d-xl-inline ps-3 ${active === 'Messages' ? 'fw-bold' : 'fw-light'}">
                             Messages
                         </div>
                     </div>
                 </a>
                 <a href="../bookmarks/index.html" class="list-group-item border-0 list-group-item-action 
-                    ${page==='Bookmarks'? 'active' : ''}">
+                    ${active === 'Bookmarks' ? 'active' : ''}">
                     <div class="row">
                         <div class="col-2">
                             <i class="fas fa-bookmark"></i>
                         </div>
-                        <div class="col-10 d-none d-xl-inline ps-3 ${page==='Bookmarks'? 'fw-bold' : 'fw-light'}">
+                        <div class="col-10 d-none d-xl-inline ps-3 ${active === 'Bookmarks' ? 'fw-bold' : 'fw-light'}">
                             Bookmarks
                         </div>
                     </div>
                 </a>
                 <a href="#" class="list-group-item border-0 list-group-item-action 
-                    ${page==='Top Articles'? 'active' : ''}">
+                    ${active === 'Top Articles' ? 'active' : ''}">
                     <div class="row">
                         <div class="col-2">
                             <i class="fas fa-fire"></i>
                         </div>
-                        <div class="col-10 d-none d-xl-inline ps-3 ${page==='Top Articles'? 'fw-bold' : 'fw-light'}">
+                        <div class="col-10 d-none d-xl-inline ps-3 ${active === 'Top Articles' ? 'fw-bold' : 'fw-light'}">
                             Top Articles
                         </div>
                     </div>
                 </a>
                 <a href="../profile.html" class="list-group-item border-0 list-group-item-action
-                ${page==='Profile'? 'active' : ''}">
+                ${active === 'Profile' ? 'active' : ''}">
                     <div class="row">
                         <div class="col-2">
                             <i class="fas fa-user"></i>
                         </div>
-                        <div class="col-10 d-none d-xl-inline ps-3 ${page==='Profile'? 'fw-bold' : 'fw-light'}">
+                        <div class="col-10 d-none d-xl-inline ps-3 ${active === 'Profile' ? 'fw-bold' : 'fw-light'}">
                             Profile
                         </div>
                     </div>
                 </a>
                 <a href="#" class="list-group-item border-0 list-group-item-action
-                    ${page==='More'? 'active' : ''}">
+                    ${active === 'More' ? 'active' : ''}">
                     <div class="row">
                         <div class="col-2">
                                 <span class="fa-stack fas wd-stack-size">
@@ -98,7 +98,7 @@ const NavigationSidebar = (page) =>{
                                     <i class="fas fa-ellipsis-h fa-stack-1x text-black"></i>
                                 </span>
                         </div>
-                        <div class="col-10 d-none d-xl-inline ps-3 ${page==='More'? 'fw-bold' : 'fw-light'}">
+                        <div class="col-10 d-none d-xl-inline ps-3 ${active === 'More' ? 'fw-bold' : 'fw-light'}">
                             More
                         </div>
                     </div>

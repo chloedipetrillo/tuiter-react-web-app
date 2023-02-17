@@ -17,7 +17,9 @@ const ExploreComponent = () => {
            <ul class="nav override-nav nav-tabs wd-tiny-padding override-nt wd-border pt-1">
                         <li class="nav-item">
                             <a class="nav-link fw-bold" href="for-you.html">For You</a>
-                            <div class="wd-box"></div>
+                            <div class="ps-2 pe-2">
+                                <div class="wd-box" style="width:100%"></div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-bold override-nl" href="trending.html">Trending</a>
