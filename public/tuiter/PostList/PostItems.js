@@ -13,8 +13,8 @@ const PostItems = (post) => {
             
             ${pic ? `<div class="card override-c mt-2 " >
               <img src=${post.image}
-                   class="card-img-top override-ct ratio" ${post.link.length + post.imgCaption.length
-                    + post.imgHeader.length > 0 ? 'style="--bs-aspect-ratio: 50%"' : `style="border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;"`} alt="...">
+                   class="card-img-top override-ct " ${post.link.length + post.imgCaption.length
+                    + post.imgHeader.length > 0 ? 'style="max-height:264px"' : `style="border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;"`} alt="...">
               ${post.link.length + post.imgCaption.length
                     + post.imgHeader.length > 0 ? 
               `<div class="card-body override-cb">
@@ -44,7 +44,7 @@ const PostItems = (post) => {
                 <span class="wd-tuiter-gray wd-font-tiny">${post.numLikes}</span>
               </div>
               <div class="col-3 override-col-padding">
-                <i class="fas fa-share wd-tuiter-gray"></i>
+                <i class="fas fa-upload wd-tuiter-gray"></i>
                 <span class="wd-tuiter-gray" style="font-size:8px"></span>
               </div>
             </div>
