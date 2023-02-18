@@ -35,11 +35,8 @@ const ExploreComponent = () => {
                         </li>
                     </ul>
            <div class="position-relative">
-                        <img class="img-fluid" src="https://metro.co.uk/wp-content/uploads/2023/01/GettyImages-1458182645.jpg?quality=90&strip=all&w=1024&h=630&crop=1">
-                        <div class="wd-text-over-pic">
-                            <span class="fw-lighter wd-font-size">Tennis Tournament • LIVE</span><br>
-                            <span>Australian Open 2023</span>
-                        </div>
+                        <img class="img-fluid" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg">
+                        <div class="wd-text-over-pic">SpaceX's Starship</div>
                     </div>
             
            ${PostSummaryList()}
