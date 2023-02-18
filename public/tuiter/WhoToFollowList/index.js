@@ -5,7 +5,7 @@ import who from "./who.js"
 const WhoToFollowList = () => {
     return (`
            <ul class="list-group override-lg">
-                <li class="list-group-item fw-bold">Who to follow</li>
+                <li class="list-group-item override-lgi fw-bold">Who to follow</li>
                 ${who.map(each => {return(WhoToFollowListItem(each));
                 }).join('')}
            </ul>

@@ -200,8 +200,6 @@ console.log(greeting2);
 const init = () => {
     console.log('Hello world from jQuery');
     /* do the rest of the lab work here */
-
-    console.log('Binding to the DOM');
     const bindById = $('#bind-by-id');
     const bindByClass = $('.bind-by-class');
     console.log('Binding to DOM');

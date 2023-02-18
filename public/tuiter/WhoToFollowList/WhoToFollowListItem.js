@@ -1,5 +1,5 @@
 const WhoToFollowListItem = (who)=>{
-    return(`<li class="list-group-item d-flex justify-content-between">
+    return(`<li class="list-group-item override-lgi d-flex justify-content-between">
                     <a class="d-flex justify-content-start text-decoration-none" href="#">
                         <img class="rounded-circle wd-img" src=${who.avatarIcon}
                              height="48px">
@@ -12,3 +12,4 @@ const WhoToFollowListItem = (who)=>{
                 </li>`);
 }
 export default WhoToFollowListItem;
+
