@@ -9,7 +9,7 @@ const NavigationSidebar = () => {
 
     return (
 
-    <div>
+    <>
         <div className="list-group border-0">
             <div className="list-group-item border-0">
                 <Link to="/tuiter">
@@ -25,7 +25,8 @@ const NavigationSidebar = () => {
                 <div className="row">
                     <div className="col-2">
                         <div className="position-relative">
-                            <i className="bi bi-house-door"></i>
+                            {active === 'home' ? <i className="bi bi-house-fill"></i> :
+                                <i className="bi bi-house-door"></i> }
                         </div>
 
                     </div>
@@ -126,7 +127,7 @@ const NavigationSidebar = () => {
                         Tuit
                     </span>
         </button>
-    </div>
+    </>
 
     );
 };
