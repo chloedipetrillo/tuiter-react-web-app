@@ -55,7 +55,7 @@ const HomePostItem = (
                                         <span className="wd-tuiter-gray wd-font-tiny"> {posts.numComments}</span>
                                     </div>
                                     <div className="col-3 override-col-padding">
-                                        <i className="bi bi-recycle wd-tuiter-gray"></i>
+                                        <i className="bi bi-repeat wd-tuiter-gray"></i>
                                         <span className="wd-tuiter-gray wd-font-tiny"> {posts.numRetuits}</span>
                                     </div>
                                     <div className="col-3 override-col-padding">

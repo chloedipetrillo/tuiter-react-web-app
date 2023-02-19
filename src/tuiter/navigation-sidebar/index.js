@@ -25,7 +25,7 @@ const NavigationSidebar = () => {
                 <div className="row">
                     <div className="col-2">
                         <div className="position-relative">
-                            {active === 'home' ? <i className="bi bi-house-fill"></i> :
+                            {active === 'home' ? <i className="bi bi-house-door-fill"></i> :
                                 <i className="bi bi-house-door"></i> }
                         </div>
 
@@ -38,13 +38,13 @@ const NavigationSidebar = () => {
 
 
             <Link to="/tuiter/explore/" className={`list-group-item border-0 list-group-item-action ${active === 'explore' 
-                || active === '' ? 'active override-a' : ''}`}>
+                || active === undefined ? 'active override-a' : ''}`}>
                 <div className="row">
                     <div className="col-2">
                         <i className="bi bi-hash"></i>
                     </div>
                     <div className={`col-10 d-none d-xl-inline ps-3 ${active === 'explore' 
-                        || active === '' ? 'fw-bold' : 'fw-light'}`}>
+                        || active === undefined ? 'fw-bold' : 'fw-light'}`}>
                         Explore
                     </div>
                 </div>
