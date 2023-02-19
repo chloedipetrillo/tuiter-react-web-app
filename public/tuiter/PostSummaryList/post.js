@@ -17,7 +17,7 @@ export default [
     },
     {
         topic: 'Web Development',
-        userName: 'Query',
+        userName: '',
         title: 'jQuery',
         time: 'last week',
         image: 'https://www.joykal.com/wp-content/uploads/2019/09/jquery.png',
