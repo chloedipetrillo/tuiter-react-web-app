@@ -1,0 +1,46 @@
+.wd-line-spacing {
+    line-height: 16px;
+}
+
+.card.override-c {
+    border-style: none;
+    border-width: 1px;
+    border-radius: 20px;
+    border-color: rgba(0,0,0,.125);
+
+}
+
+.card-body.override-cb {
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 8px;
+    border-color: rgba(0,0,0,.125);
+
+}
+
+.card-img-top.override-ct {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.125);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.wd-no-caption{
+   border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.col-3.override-col-padding{
+    padding-left: 2px;
+    padding-right:1px;
+}
+
+.wd-img {
+    max-width: 504px;
+    max-height:254px;
+    object-fit: cover;
+}
