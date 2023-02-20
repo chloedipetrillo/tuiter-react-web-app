@@ -44,3 +44,23 @@
     max-height:254px;
     object-fit: cover;
 }
+
+
+.wd-quote-retweet-box {
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.125);
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.wd-quote-retweet-pic {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.wd-tuiter-color {
+    color: rgb(29, 161, 242);
+}

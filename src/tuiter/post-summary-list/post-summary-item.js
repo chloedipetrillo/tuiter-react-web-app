@@ -16,7 +16,7 @@ const PostSummaryItem = (
                 </div>
 
                 <div class="fw-bold">
-                    {post.userName} <i class="bi bi-check-circle-fill"></i>
+                    {post.userName} <i class="bi bi-patch-check-fill"></i>
                     <span class="text-secondary fw-lighter ps-2">
                      - {post.time}
                 </span>
@@ -31,7 +31,7 @@ const PostSummaryItem = (
                 }
             </div>
 
-            {post.image.length > 0 ?
+            { post.hasOwnProperty('image') && post.image.length > 0 ?
                 <img className="float-end wd-tuit-images" src={post.image}/>
                 :
                 <div className="float-end text-secondary">•••</div>

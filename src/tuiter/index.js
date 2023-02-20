@@ -5,6 +5,8 @@ import WhoToFollowList from "./who-to-follow-list";
 import {Routes, Route} from "react-router";
 import HomeComponent from "./home/index.js";
 import PostSummaryList from "./post-summary-list/index.js";
+import {faFontAwesome} from "@fortawesome/free-regular-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 function Tuiter() {
     return (

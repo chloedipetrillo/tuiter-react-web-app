@@ -11,7 +11,7 @@ const WhoToFollowListItem = (
                 <img className="rounded-circle wd-img" src={who.avatarIcon}/>
                     <div className="ps-1">
                         <span className="fw-bold wd-font-size">{who.userName} <i
-                            className="bi bi-check-circle-fill wd-twitter-color"></i> </span>
+                            className="bi bi-patch-check-fill wd-tuiter-color"></i> </span>
                         <div className="fw-light wd-font-size">@{who.handle}</div>
                     </div>
             </a>

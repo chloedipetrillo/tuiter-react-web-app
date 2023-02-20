@@ -3,6 +3,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './index.css'
 
+
+const quoteRetweeted = (
+    {posts}
+) => {
+    return(
+        <div className="mt-2 wd-quote-retweet-box">
+            <img className="rounded-circle wd-quote-retweet-pic d-inline" src={posts.originalProPic}/>
+            <div className="ps-1 d-inline">
+                <span className="fw-bold">{posts.originalName} <i className="bi bi-patch-check-fill wd-tuiter-color"></i></span>
+                <span className="ps-1 text-secondary"> @{posts.originalHandle} • {posts.originalTime} </span>
+                <div>{posts.originalContent}</div>
+            </div>
+        </div>
+    )
+}
+
 const HomePostItem = (
     {
         posts
@@ -12,15 +28,23 @@ const HomePostItem = (
         <li className="list-group-item override-bgcolor">
             <div className="row">
                 <div className="col-11">
+                    {posts.retweet ? <div className="ps-5 text-muted wd-font-tiny fw-bold">
+                        <i className="bi bi-repeat"> </i>
+                        <span className="ps-2"> {posts.retweetBy}  Retweeted </span>
+                    </div> : ''}
 
 
                     <div className="d-flex justify-content-lg-start">
                         <img className="rounded-circle wd-img" src={posts.propic}/>
                             <div className="ps-3">
-                                <span className="fw-bold">{posts.name} <i className="bi bi-check-circle-fill"></i></span>
-                                <span className="ps-1 text-secondary"> @{posts.handle} • {posts.time} </span>
+                                <span className="fw-bold">{posts.name} <i className="bi bi-patch-check-fill wd-tuiter-color"></i></span>
+                                <span className="ps-1 text-muted"> @{posts.handle} • {posts.time} </span>
                                 <div>{posts.content}</div>
 
+
+                                {posts.quoteRt ? quoteRetweeted({posts})
+
+                                : ''}
 
                                 {posts.image.length > 0 ?
                                     <div className="card override-c mt-2 ">
@@ -44,6 +68,8 @@ const HomePostItem = (
                                     </div> :
                                     ''
                                 }
+
+
 
 
 
