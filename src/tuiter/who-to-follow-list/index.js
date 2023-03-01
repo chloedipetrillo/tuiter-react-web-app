@@ -15,6 +15,7 @@ const WhoToFollowList = () => {
                             who={who}/>
                     )
                 }
+                <li className="ps-3 list-group-item override-lgi wd-tuiter-color">Show More</li>
             </ul>
 
             <div className="mt-2 wd-font-tiny ps-3">

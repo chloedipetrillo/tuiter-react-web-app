@@ -19,7 +19,7 @@ function Tuiter() {
                 <Routes>
                     <Route path="Home"    element={<HomeComponent/>}/>
                     <Route path="Explore" element={<ExploreComponent/>}/>
-                    <Route path="/"    element={<ExploreComponent/>}/>
+                    <Route index element={<ExploreComponent/>}/>
                 </Routes>
 
             </div>
@@ -27,7 +27,7 @@ function Tuiter() {
                 <Routes>
                     <Route path="Home"    element={<PostSummaryList/>}/>
                     <Route path="Explore" element={<WhoToFollowList/>}/>
-                    <Route path="/"    element={<WhoToFollowList/>}/>
+                    <Route index element={<WhoToFollowList/>}/>
                 </Routes>
             </div>
         </div>

@@ -6,10 +6,12 @@ import HelloWorld from "./labs/a6/hello-world.js";
 import Tuiter from "./tuiter/index.js";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
+
 import Nav from "./nav.js";
 
 function App() {
     return (
+
         <BrowserRouter>
             <div className="container">
                 <Routes>

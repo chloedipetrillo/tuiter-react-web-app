@@ -8,7 +8,7 @@ const HomePosts = () => {
         <ul className="list-group">
             {
                 postArray.map(posts => <HomePostItem
-                key={posts.id}
+                key={posts._id}
                 posts={posts}/>)
             }
         </ul>

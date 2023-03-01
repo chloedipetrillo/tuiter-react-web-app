@@ -94,8 +94,10 @@ const HomePostItem = (
                                     </div>
                                 </div>
 
-                            </div>
+                                {posts.showthread ? <div className="mt-2 mb-2 wd-tuiter-color"> Show this thread </div> : ''}
 
+
+                            </div>
 
 
                     </div>
