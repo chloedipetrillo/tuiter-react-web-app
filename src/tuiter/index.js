@@ -7,11 +7,13 @@ import HomeComponent from "./home/index.js";
 import PostSummaryList from "./post-summary-list/index.js";
 import {faFontAwesome} from "@fortawesome/free-regular-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Nav from "../nav.js";
 
 function Tuiter() {
     return (
 
         <div className="row mt-2">
+            <Nav/>
             <div className="col-2 col-lg-1 col-xl-2">
                 <NavigationSidebar active="Explore"/>
             </div>
