@@ -8,12 +8,12 @@ const ExploreComponent = () => {
     return(
         <>
             <div className="row">
-                <div class="col-11">
-                    <div class="position-relative">
+                <div className="col-11">
+                    <div className="position-relative">
                         <input className="ps-5 form-control rounded-pill override-fc border-0"
                                placeholder="Search Tuiter"/>
-                        <span class="wd-position-search-icon">
-                            <i class="bi bi-search"></i>
+                        <span className="wd-position-search-icon">
+                            <i className="bi bi-search"></i>
                         </span>
                     </div>
                 </div>

@@ -8,6 +8,7 @@ const PostSummaryItem = (
     const {pathname} = useLocation();
     const paths = pathname.split('/')
     const active = paths[2];
+
     return(
         <li className={`list-group-item d-flex justify-content-between ${active === 'home' ? 'override-lgi' : ''}`}>
             <div className="wd-padding-right">
@@ -15,36 +16,21 @@ const PostSummaryItem = (
                     {post.topic}
                 </div>
 
-                <div class="fw-bold">
-                    {post.userName} <i class="bi bi-patch-check-fill"></i>
-                    <span class="text-secondary fw-lighter ps-2">
+                <div className="fw-bold">
+                    {post.userName} <i className="bi bi-patch-check-fill"></i>
+                    <span className="text-secondary fw-lighter ps-2">
                      - {post.time}
                 </span>
                     <div>{post.title}</div>
                 </div>
-                {post.tweets.length > 0 ?
-                    <div className="text-secondary">
-                        {post.tweets} Tuits
-                    </div>
-                    :
-                    <br></br>
-                }
+                <div className="text-secondary">
+                    {post.replies > 0 ? `${post.replies} Tuits`: '' }
+                </div>
             </div>
-
-            { post.hasOwnProperty('image') && post.image.length > 0 ?
-                <img className="float-end wd-tuit-images" src={post.image}/>
-                :
-                <div className="float-end text-secondary">•••</div>
-            }
-
-
-
-
-
+            <img className="float-end wd-tuit-images" src={post.image}/>
 
 
         </li>
     );
 };
 export default PostSummaryItem;
-

@@ -64,3 +64,14 @@
 .wd-tuiter-color {
     color: rgb(29, 161, 242);
 }
+
+.wd-like-color {
+    color: red;
+}
+
+.btn-primary.override-bs1 {
+    background-color: rgb(29, 161, 242);
+    border-color: rgb(29, 161, 242);
+    color: white;
+    font-size: 14px;
+}

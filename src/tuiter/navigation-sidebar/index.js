@@ -98,13 +98,14 @@ const NavigationSidebar = () => {
                     </div>
                 </div>
             </Link>
-            <Link to="/" className={`list-group-item border-0 list-group-item-action
-                ${active === 'profile' ? 'active override-a' : ''}`}>
+            <Link to="/tuiter/profile/" className={`list-group-item border-0 list-group-item-action
+                ${active === 'profile' || active==='edit-profile' ? 'active override-a' : ''}`}>
                 <div className="row">
                     <div className="col-2">
                         <i className="bi bi-person"></i>
                     </div>
-                    <div className={`col-10 d-none d-xl-inline ps-3 ${active === 'profile' ? 'fw-bold' : 'fw-light'}`}>
+                    <div className={`col-10 d-none d-xl-inline ps-3 ${active === 'profile'
+                    || active==='edit-profile' ? 'fw-bold' : 'fw-light'}`}>
                         Profile
                     </div>
                 </div>
