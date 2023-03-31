@@ -22,12 +22,12 @@ const TuitStats = (
     return(
 
         <div className="row mt-2 ps-4 pt-1 pb-1">
-            <div className="col-2 override-col-padding">
+            <div className="col-3 override-col-padding">
                 <i className="bi bi-chat wd-tuiter-gray"></i>
                 <span className="wd-tuiter-gray wd-font-tiny"> {posts.replies}</span>
             </div>
 
-            <div className="col-2 override-col-padding">
+            <div className="col-3 override-col-padding">
                 <i className="bi bi-repeat wd-tuiter-gray"></i>
                 <span className="wd-tuiter-gray wd-font-tiny"> {posts.retuits}</span>
             </div>
@@ -50,7 +50,7 @@ const TuitStats = (
                     <span className="wd-tuiter-gray wd-font-tiny"> {posts.likes}</span>
                 </div>
             }
-            {posts.disliked ?
+            {posts.disliked ?<>
                 <div className="col-3 override-col-padding">
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...posts,
@@ -58,7 +58,13 @@ const TuitStats = (
                         disliked:false
                     }))} className="bi bi-hand-thumbs-down-fill"></i>
                     <span className="wd-tuiter-gray wd-font-tiny"> {posts.dislikes}</span>
-                </div> :
+                </div>
+                <div className="float-end">
+                    <i className="bi bi-upload wd-tuiter-gray"></i>
+                    <span className="wd-tuiter-gray" ></span>
+                </div> </>:
+                <>
+
                 <div className="col-3 override-col-padding">
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...posts,
@@ -67,8 +73,13 @@ const TuitStats = (
                     }))} className="bi bi-hand-thumbs-down wd-tuiter-gray"></i>
                     <span className="wd-tuiter-gray wd-font-tiny"> {posts.dislikes}</span>
                 </div>
+                <div className="float-end">
+                <i className="bi bi-upload wd-tuiter-gray"></i>
+                <span className="wd-tuiter-gray" ></span>
+                </div>
+                </>
             }
-            <div className="col-2 override-col-padding">
+            <div className="d-none col-2 override-col-padding">
                 <i className="bi bi-upload wd-tuiter-gray"></i>
                 <span className="wd-tuiter-gray" ></span>
             </div>
