@@ -22,57 +22,62 @@ const TuitStats = (
 
     return(
 
-        <div className="ms-3 d-flex justify-content-between wd-width">
-            <div >
-                <i className="bi bi-chat wd-tuiter-gray"></i>
-                <span className="wd-tuiter-gray wd-font-tiny"> {posts.replies}</span>
+        <div className="ms-3 mt-2 mb-2 row">
+            <div className="col-11">
+
+            </div>
+            <div className="col-2 override-col-padding">
+                <i className="bi bi-chat text-muted"></i>
+                <span className="text-muted wd-font-tiny"> {posts.replies}</span>
             </div>
 
-            <div >
-                <i className="bi bi-repeat wd-tuiter-gray"></i>
-                <span className="wd-tuiter-gray wd-font-tiny"> {posts.retuits}</span>
+            <div className="col-2 override-col-padding">
+                <i className="bi bi-repeat text-muted"></i>
+                <span className="text-muted wd-font-tiny"> {posts.retuits}</span>
             </div>
 
             {posts.liked ?
-                <div>
+                <div className="col-2 override-col-padding">
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...posts,
                         likes: posts.likes - 1,
                         liked:false
                     }))} className="bi bi-heart-fill wd-tuiter-color wd-like-color"></i>
-                    <span className="wd-tuiter-gray wd-font-tiny"> {posts.likes}</span>
+                    <span className="text-muted wd-font-tiny"> {posts.likes}</span>
                 </div> :
-                <div >
+                <div className="col-2 override-col-padding">
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...posts,
                         likes: posts.likes + 1,
                         liked:true
-                    }))} className="bi bi-heart wd-tuiter-gray"></i>
-                    <span className="wd-tuiter-gray wd-font-tiny"> {posts.likes}</span>
+                    }))} className="bi bi-heart text-muted"></i>
+                    <span className="text-muted wd-font-tiny"> {posts.likes}</span>
                 </div>
             }
+
             {posts.disliked ?
-                <div >
+                <div className="col-2 override-col-padding">
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...posts,
                         dislikes: posts.dislikes - 1,
                         disliked:false
-                    }))} className="bi bi-hand-thumbs-down-fill"></i>
-                    <span className="wd-tuiter-gray wd-font-tiny"> {posts.dislikes}</span>
+                    }))} className="bi bi-hand-thumbs-down-fill "></i>
+                    <span className="text-muted wd-font-tiny"> {posts.dislikes}</span>
                 </div> :
-                <div >
+                <div className="col-2 override-col-padding">
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...posts,
                         dislikes: posts.likes + 1,
                         disliked:true
-                    }))} className="bi bi-hand-thumbs-down wd-tuiter-gray"></i>
-                    <span className="wd-tuiter-gray wd-font-tiny"> {posts.dislikes}</span>
+                    }))} className="bi bi-hand-thumbs-down text-muted"></i>
+                    <span className="text-muted wd-font-tiny"> {posts.dislikes}</span>
                 </div>
             }
-            <div >
-                <i className="bi bi-upload wd-tuiter-gray"></i>
-                <span className="wd-tuiter-gray" ></span>
+
+            <div className="col-2 override-col-padding">
+                <i className="bi bi-upload text-muted"></i>
             </div>
+
         </div>
 
     );
