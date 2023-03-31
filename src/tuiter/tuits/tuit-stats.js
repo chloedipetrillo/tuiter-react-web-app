@@ -57,7 +57,7 @@ const TuitStats = (
                         dislikes: posts.dislikes - 1,
                         disliked:false
                     }))} className="bi bi-hand-thumbs-down-fill"></i>
-                    <span className="wd-tuiter-gray wd-font-tiny"> {posts.likes}</span>
+                    <span className="wd-tuiter-gray wd-font-tiny"> {posts.dislikes}</span>
                 </div> :
                 <div className="col-3 override-col-padding">
                     <i onClick={() => dispatch(updateTuitThunk({
@@ -65,7 +65,7 @@ const TuitStats = (
                         dislikes: posts.likes + 1,
                         disliked:true
                     }))} className="bi bi-hand-thumbs-down wd-tuiter-gray"></i>
-                    <span className="wd-tuiter-gray wd-font-tiny"> {posts.likes}</span>
+                    <span className="wd-tuiter-gray wd-font-tiny"> {posts.dislikes}</span>
                 </div>
             }
             <div className="col-3 override-col-padding">
