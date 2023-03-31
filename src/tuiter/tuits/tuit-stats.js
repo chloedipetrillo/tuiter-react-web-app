@@ -67,7 +67,7 @@ const TuitStats = (
                 <div className="col-2 override-col-padding">
                     <i onClick={() => dispatch(updateTuitThunk({
                         ...posts,
-                        dislikes: posts.likes + 1,
+                        dislikes: posts.dislikes + 1,
                         disliked:true
                     }))} className="bi bi-hand-thumbs-down text-muted"></i>
                     <span className="text-muted wd-font-tiny"> {posts.dislikes}</span>
