@@ -286,7 +286,7 @@ const init = () => {
     let hideBtn, showBtn, hideShowHeader;
     hideBtn = $('#hide');
     showBtn = $('#show');
-    hideShowHeader = $('#hide-show');
+    hideShowHeader = $('#hide-show' );
     const hideHandler = () => {
         hideShowHeader.hide();
     }
